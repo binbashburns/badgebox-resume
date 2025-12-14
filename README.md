@@ -85,7 +85,7 @@ Update the content so the site looks like you:
 
 - Edit `website/index.md` – name, contact info, experience, projects (a starter template is already there).
 - Replace `website/assets/img/profile.png` with your own headshot (keep the same filename).
-- Update site metadata in `website/_config.yml` – set `title` and `description`.
+- Update site metadata in `website/_config.yml` – set `title`, `description`, and `url`/`baseurl` (see below).
 
 That’s all you need to change to get a personalized site.
 
@@ -183,6 +183,28 @@ This repo already includes a GitHub Actions workflow at `.github/workflows/websi
 After the workflow completes, your site will be live at the URL shown in the Pages settings.
 
 ![github-pages](./website/assets/img/github-pages.png)
+
+### 6.1 Configure `url` and `baseurl` for your setup
+
+Jekyll (and the Minima theme) use `url` and `baseurl` in `website/_config.yml` to build correct links to CSS, images, and pages.
+
+Use **one** of these patterns:
+
+- **Custom domain at the root** (e.g. `https://badge-box.com`)
+
+  ```yaml
+  url: "https://badge-box.com"   # your custom domain
+  baseurl: ""                    # empty string means site is served from the root
+  ```
+
+- **GitHub Pages project site** (e.g. `https://<user>.github.io/<repo>/`)
+
+  ```yaml
+  url: "https://<user>.github.io"   # your GitHub Pages root
+  baseurl: "/<repo>"                # e.g. "/badgebox-resume"
+  ```
+
+If your CSS or images look broken on GitHub Pages, double-check that `url` and `baseurl` match how you’ve configured Pages (custom domain vs project site) and your repository name.
 
 ---
 

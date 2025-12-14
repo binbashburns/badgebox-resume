@@ -4,8 +4,13 @@ theme: minima
 markdown: kramdown
 exclude: [vendor, node_modules]
 
-# When this repo is published as a GitHub Pages project site
-# (e.g., https://<username>.github.io/badgebox-resume/), Jekyll
-# needs baseurl set so Minima and asset URLs resolve correctly.
-# If you rename the repo, update this to match ("/new-repo-name").
-baseurl: "/badgebox-resume"
+# If you use a custom domain like https://badge-box.com, set:
+#   url: "https://badge-box.com"
+#   baseurl: ""   # empty string means site is served at the root
+url: "https://badge-box.com"
+baseurl: ""
+
+# If someone instead uses a project site (e.g. https://<user>.github.io/<repo>/),
+# they should change url/baseurl to something like:
+#   url: "https://<user>.github.io"
+#   baseurl: "/<repo>"   # e.g. "/badgebox-resume"
