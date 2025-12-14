@@ -3,3 +3,9 @@ description: "InsertResumeTitleHere"
 theme: minima
 markdown: kramdown
 exclude: [vendor, node_modules]
+
+# When this repo is published as a GitHub Pages project site
+# (e.g., https://<username>.github.io/badgebox-resume/), Jekyll
+# needs baseurl set so Minima and asset URLs resolve correctly.
+# If you rename the repo, update this to match ("/new-repo-name").
+baseurl: "/badgebox-resume"
