@@ -1,0 +1,60 @@
+:root {
+  --badge-size: 72px;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.badge-card {
+  display: grid;
+  grid-template-columns: var(--badge-size) 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+}
+
+.badge-img {
+  width: var(--badge-size);
+  height: var(--badge-size);
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Typography tweaks so the card feels balanced at smaller art size */
+.badge-name   { margin: 0 0 .25rem; font-size: 1rem; line-height: 1.2; }
+.badge-issuer { opacity: .8;     font-size: .9rem; }
+.badge-dates  { opacity: .8;     font-size: .85rem; }
+
+/* Pills */
+.pill { padding: .1rem .5rem; border-radius: 999px; border: 1px solid currentColor; font-size: .75rem; }
+.pill.ok     { color: #99d19c; }
+.pill.warn   { color: #e6c25a; }
+.pill.danger { color: #e07a7a; }
+
+/* Slightly smaller badges on very narrow screens */
+@media (max-width: 480px) {
+  :root { --badge-size: 72px; }
+}
+
+/* skills cloud */
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .6rem;
+  margin-top: 1rem;
+}
+.skills-cloud .skill {
+  font-size: .85rem;
+  line-height: 1;
+  padding: .35rem .6rem;
+  border: 1px solid #333;
+  border-radius: 999px;
+  opacity: .9;
+}

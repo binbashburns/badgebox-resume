@@ -1,0 +1,5 @@
+title: "InsertResumeTitleHere"
+description: "InsertResumeTitleHere"
+theme: minima
+markdown: kramdown
+exclude: [vendor, node_modules]
