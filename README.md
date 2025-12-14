@@ -1,5 +1,9 @@
 # Badge Box Resume Template
 
+[![Last commit](https://img.shields.io/github/last-commit/binbashburns/badgebox-resume?color=bd93f9&labelColor=282a36)](https://github.com/binbashburns/badgebox-resume/commits/main)
+[![Open issues](https://img.shields.io/github/issues/binbashburns/badgebox-resume?color=ff5555&labelColor=282a36)](https://github.com/binbashburns/badgebox-resume/issues)
+[![Live site](https://img.shields.io/badge/live-badgebox--resume-50fa7b?labelColor=282a36)](https://binbashburns.github.io/badgebox-resume)
+
 ![badgebox-banner](./website/assets/img/badgebox-banner.png)
 
 Generate a personal résumé website with live certification badges from Credly.
